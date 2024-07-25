@@ -1,0 +1,54 @@
+.wrapper {
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 8px;
+
+    &:hover {
+        border-color: hsl(243, 100%, 62%);
+    }
+
+    &:has(input:checked) {
+        border-color: hsl(243, 100%, 62%);
+    }
+}
+.inner {
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.checkInput {
+    width: 20px;
+    height: 20px;
+    margin-right: 23px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    gap: 5px;
+}
+.content__title {
+    color: hsl(213, 96%, 18%);
+    font-weight: 500;
+}
+.content__des {
+    color: hsl(231, 11%, 63%);
+    font-size: 14px;
+}
+.price {
+    font-size: 14px;
+    color: hsl(243, 100%, 62%);
+}
+
+@media only screen and (max-width: 376px) {
+    .checkInput {
+        margin-right: 15px;
+    }
+    .content__title{
+        font-size: 14px;
+    }
+    .content__des, .price{
+        font-size: 12px;
+    }
+}

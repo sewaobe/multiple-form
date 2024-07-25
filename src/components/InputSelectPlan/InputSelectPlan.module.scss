@@ -1,0 +1,55 @@
+.wrapper {
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 8px;
+    max-width: fit-content;
+    cursor: pointer;
+    &:hover {
+        border-color: hsl(243, 100%, 62%) !important;
+    }
+}
+.inner {
+    width: 136px;
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 16px;
+}
+.image {
+    width: 40px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    .title {
+        font-weight: 700;
+    }
+
+    .price {
+        font-size: 14px;
+        color: hsl(231, 11%, 63%);
+    }
+
+    .note {
+        color: hsl(243, 100%, 62%);
+        margin-top: 3px;
+        margin-bottom: 3px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .wrapper {
+        width: 100%;
+        max-width: none;
+    }
+    .inner {
+        width: 100%;
+        flex-direction: row;
+        gap: 30px;
+    }
+}

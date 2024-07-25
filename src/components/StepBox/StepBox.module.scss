@@ -1,0 +1,48 @@
+.wrapper {
+    max-width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    color: white;
+    margin-bottom: 31px;
+    font-size: 13px;
+}
+.number {
+    width: 33px;
+    height: 33px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    gap: 3px;
+}
+
+.content__step {
+    font-size: 12px;
+    color: hsl(229, 24%, 87%);
+}
+
+.content__title {
+    font-size: 15px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 376px) {
+    .wrapper {
+        margin-bottom: 60px;
+    }
+    .content {
+        display: none;
+    }
+}

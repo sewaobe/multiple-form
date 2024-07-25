@@ -1,0 +1,24 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.title {
+    color: hsl(213, 96%, 18%);
+}
+
+.content {
+    margin-top: 12px;
+    color: hsl(231, 11%, 63%);
+}
+
+@media only screen and (max-width: 376px) {
+    .wrapper {
+        margin-top: 0;
+    }
+    .title {
+        font-size: 24px;
+    }
+    
+}
